@@ -1,0 +1,611 @@
+/* RESET */
+/* Removes default spacing and sets box sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* Default font */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Main body styling */
+body {
+    background: #020617;
+    color: #e5e7eb;
+}
+
+
+/* Navigation bar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #020617;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Website logo */
+.logo {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Navigation links */
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #9ca3af;
+    font-weight: 500;
+    position: relative;
+}
+
+/* Hover*/
+nav a.active,
+nav a:hover {
+    color: white;
+}
+
+/* Yellow underline for active page */
+nav a.active::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #facc15;
+}
+
+/* show sections */
+.home-show,
+.mars-show,
+.show {
+    position: relative;
+    padding: 100px 60px;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Home page background */
+.home-show {
+    background: url("milkyway.jpg") center/cover no-repeat;
+}
+
+/* Mars page background */
+.mars-show {
+    background: url("mars.jpeg") center/cover no-repeat;
+}
+
+/* Planets page background */
+.show{
+    background: url("space.jpeg") center/cover no-repeat;
+}
+
+/* overlay */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(2,6,23,0.9), rgba(2,6,23,0.3));
+}
+
+/* show section text container */
+.show-content {
+    position: relative;
+    max-width: 600px;
+    z-index: 2;
+}
+
+/* Small subtitle text */
+.subtitle {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #9ca3af;
+    margin-bottom: 10px;
+}
+
+/* Green subtitle variation */
+.subtitle.green {
+    color: #4ade80;
+}
+
+/* Main page headings */
+h1 {
+    font-size: 80px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+/* Paragraph descriptions */
+.description {
+    font-size: 18px;
+    color: #cbd5f5;
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+
+/* BUTTONS */
+.buttons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 55px;
+}
+
+/* Primary button */
+.primary {
+    background: #facc15;
+    color: black;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Secondary button */
+.secondary {
+    background: transparent;
+    border: 1px solid #6b7280;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.buttons {
+    gap: 12px;
+}
+
+/* planets area */
+/* Main planets area */
+.planets-section {
+    padding: 60px;
+}
+
+/* Section top layout */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* Section heading */
+.section-header h2 {
+    font-size: 32px;
+}
+
+/* Filter label */
+.filter label {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Dropdown styling */
+select {
+    padding: 8px;
+    background: #020617;
+    color: white;
+    border: 1px solid #374151;
+}
+
+/* CARDS */
+/* Card grid layout */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* Individual planet card */
+.card {
+    background: #0b1220;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: 0.3s;
+}
+
+/* Card hover effect */
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #facc15;
+}
+
+/* Card heading */
+.card h3 {
+    margin-top: 10px;
+}
+
+/* Card paragraph */
+.card p {
+    font-size: 14px;
+    color: #9ca3af;
+    margin-top: 5px;
+}
+
+/* Card links */
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #facc15;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Highlighted card border */
+.highlight {
+    border-color: #facc15;
+}
+
+/* PLANET CIRCLES */
+/* Basic planet circle shape */
+.planet {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Planet colors */
+.mercury { background: #9ca3af; }
+.venus { background: #d4a373; }
+.earth { background: #3b82f6; }
+.mars { background: #ef4444; }
+.jupiter { background: #c08457; }
+.saturn { background: #eab308; }
+.uranus { background: #67e8f9; }
+.neptune { background: #3b82f6; }
+
+/* MARS INFO SECTION */
+/* Layout for Mars info section */
+.mars-info {
+    display: flex;
+    gap: 50px;
+    padding: 60px;
+}
+
+/* Left content */
+.info-left {
+    flex: 1;
+}
+
+/* Left heading */
+.info-left h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+/* Left paragraph */
+.info-left p {
+    color: #9ca3af;
+}
+
+/* Right content */
+.info-right {
+    flex: 1;
+}
+
+/* Information rows */
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding: 12px 0;
+}
+
+/* Green labels */
+.info-row span {
+    color: #4ade80;
+}
+
+/* MILKY WAY INFO SECTION */
+.milky-info {
+    display: flex;
+    padding: 80px 60px;
+    gap: 60px;
+    align-items: center;
+}
+
+/* TEXT SIDE */
+.info-text {
+    flex: 1;
+}
+
+/* Section heading */
+.info-text h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+/* Paragraph styling */
+.info-text p {
+    font-size: 18px;
+    color: #9ca3af;
+    line-height: 1.8;
+}
+
+/* IMAGE SIDE */
+.info-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+/* Image styling */
+.info-image img {
+    width: 80%;
+    max-width: 500px;
+    border-radius: 12px;
+}
+
+/* VIDEO SECTION */
+.video-section {
+    padding: 60px;
+    text-align: center;
+}
+
+/* Embedded video */
+.video-container iframe {
+    width: 70%;
+    height: 420px;
+    border-radius: 10px;
+}
+
+/* RESPONSIVE DESIGN */
+/* Adjustments for smaller screens */
+@media(max-width: 900px) {
+
+    /* Smaller heading */
+    h1 {
+        font-size: 42px;
+    }
+
+    /* Smaller section heading */
+    .info-text h2 {
+        font-size: 28px;
+    }
+
+    /* Stack layout vertically */
+    .milky-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Full width image */
+    .info-image img {
+        width: 100%;
+    }
+
+    /* Full width video */
+    .video-container iframe {
+        width: 100%;
+    }
+}
+
+/* CENTER CONTENT */
+/* Centers content vertically and horizontally */
+.center-content{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    margin-top:50px;
+    text-align:center;
+}
+
+/* STATS SECTION */
+/* Stats container */
+.space-stats{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-bottom:35px;
+}
+
+/* Individual stat box */
+.stat-box{
+    background: rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.1);
+    padding:20px;
+    border-radius:14px;
+    min-width:140px;
+    backdrop-filter: blur(6px);
+    transition:0.3s;
+}
+
+/* Hover effect */
+.stat-box:hover{
+    transform: translateY(-6px);
+    border-color:#facc15;
+    box-shadow:0 0 20px rgba(250,204,21,0.3);
+}
+
+/* Stat number */
+.stat-box h3{
+    color:#facc15;
+    font-size:30px;
+    margin-bottom:8px;
+}
+
+/* Stat description */
+.stat-box p{
+    color:#cbd5e1;
+    font-size:15px;
+}
+
+/* QUOTE SECTION */
+.space-quote{
+    max-width:700px;
+    font-size:24px;
+    font-style:italic;
+    color:#93c5fd;
+    line-height:1.8;
+}
+
+/* GLOWING VIDEO TITLE */
+.video-section h2{
+    font-size: 48px;
+    color: white;
+    text-align: center;
+    margin-bottom: 25px;
+
+    /* Glow effect */
+    text-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #60a5fa,
+        0 0 20px #3b82f6,
+        0 0 40px #2563eb;
+
+    /* Animation */
+    animation: glowPulse 2s infinite alternate;
+}
+
+/* GLOW ANIMATION */
+@keyframes glowPulse{
+
+    /* Starting glow */
+    from{
+        text-shadow:
+            0 0 5px #ffffff,
+            0 0 10px #e9ed0e,
+            0 0 20px #dae90b;
+    }
+
+    /* Ending glow */
+    to{
+        text-shadow:
+            0 0 10px #ffffff,
+            0 0 20px #edfd93,
+            0 0 40px #e1e51e,
+            0 0 60px #dee607;
+    }
+}
+
+
+/* Mars cards grid */
+.mars-cards{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    padding:60px;
+}
+
+/* Individual Mars card */
+.mars-card{
+    background:#0b1220;
+    padding:30px;
+    border-radius:14px;
+    border:1px solid rgba(255,255,255,0.1);
+    transition:0.3s;
+}
+
+/* Hover effect */
+.mars-card:hover{
+    transform:translateY(-8px);
+    border-color:#ef4444;
+    box-shadow:0 0 20px rgba(239,68,68,0.3);
+}
+
+/* Card heading */
+.mars-card h3{
+    margin-bottom:15px;
+    color:#ef4444;
+    font-size:24px;
+}
+
+/* Card paragraph */
+.mars-card p{
+    color:#cbd5e1;
+    line-height:1.7;
+}
+
+
+/* Gallery section */
+.mars-gallery{
+    padding:60px;
+    text-align:center;
+}
+
+/* Gallery heading */
+.mars-gallery h2{
+    font-size:42px;
+    margin-bottom:35px;
+}
+
+/* Image grid */
+.gallery-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+/* Gallery images */
+.gallery-grid img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    border-radius:14px;
+    transition:0.4s;
+}
+
+/* Image hover effect */
+.gallery-grid img:hover{
+    transform:scale(1.03);
+    box-shadow:0 0 25px rgba(255,255,255,0.2);
+}
+
+/* QUOTE SECTION */
+.mars-quote{
+    padding:80px 40px;
+    text-align:center;
+}
+
+/* Quote text */
+.mars-quote p{
+    font-size:32px;
+    font-style:italic;
+    color:#fca5a5;
+    max-width:900px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* MOBILE DESIGN */
+@media(max-width:900px){
+
+    /* Smaller padding */
+    .mars-cards,
+    .mars-gallery{
+        padding:40px 20px;
+    }
+
+    /* Smaller quote text */
+    .mars-quote p{
+        font-size:24px;
+    }
+}
+
+/* FOOTER */
+/* Footer layout */
+.footer {
+    padding: 30px 60px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+/* Footer links */
+.footer a {
+    color: #9ca3af;
+    text-decoration: none;
+}
