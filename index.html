@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--Basic page settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title -->
+    <title>Big Planetarium</title>
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Smooth scroll-->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+</head>
+<body>
+
+<!--Navigation bar -->
+<header class="navbar">
+
+    <!-- Website logo-->
+    <div class="logo"> Big Planetarium</div>
+
+    <!-- Navigation links -->
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="planets.html">Planets</a>
+        <a href="mars.html">Mars</a>
+    </nav>
+
+</header>
+
+<!--show section -->
+<section class="home-show">
+
+    <!-- Dark overlay over background image -->
+    <div class="overlay"></div>
+
+    <!--  show content -->
+    <div class="show-content">
+
+        <!-- Small subtitle -->
+        <p class="subtitle green">BRISTOL-BASED SPACE LEARNING</p>
+
+        <!-- Main heading -->
+        <h1>Explore the<br>Milky Way</h1>
+
+        <!-- Intro description -->
+        <p class="description">
+            Big Planetarium helps everyone discover space through clear explanations,
+            exciting visuals, and accessible learning experiences.
+        </p>
+
+        <!-- Buttons -->
+        <div class="buttons">
+
+            <!-- Go to planets page -->
+            <a href="planets.html" class="primary">Meet the planets</a>
+
+            <!-- Scroll to video section -->
+            <a href="#milky-video" class="secondary">Explore Milky Way</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--space stats -->
+<div class="center-content">
+
+    <div class="space-stats">
+
+        <!-- Stars stat -->
+        <div class="stat-box">
+            <h3>100B+</h3>
+            <p>Stars</p>
+        </div>
+
+        <!-- Galaxy stats -->
+        <div class="stat-box">
+            <h3>13.6B</h3>
+            <p>Years Old</p>
+        </div>
+
+        <!-- Planets stat -->
+        <div class="stat-box">
+            <h3>200B+</h3>
+            <p>Planets</p>
+        </div>
+
+    </div>
+
+    <!-- quote -->
+    <div class="space-quote">
+        “Across the sea of space, the stars are other suns.”
+    </div>
+
+</div>
+
+<!-- Information -->
+<section class="milky-info">
+
+    
+    <div class="info-text">
+
+        <!-- Section heading -->
+        <h2>About the Milky Way</h2>
+
+        <!-- Information paragraph -->
+        <p>
+            The Milky Way is the galaxy that contains our Solar System.
+            It is made up of billions of stars, planets, gas, and dust.
+            From Earth, it appears as a glowing band across the night sky.
+            a large barred spiral galaxy, roughly 100,000 to 200,000 light-years across,
+            containing 100-400 billion stars, including our Sun
+        </p>
+
+    </div>
+
+    <!-- Image side -->
+    <div class="info-image">
+
+        <!-- Milky Way image -->
+        <img src="milky2.jpg" alt="Milky Way Galaxy">
+
+    </div>
+
+</section>
+
+<!-- video section -->
+<section class="video-section" id="milky-video">
+
+    <!-- Video title -->
+    <h2>Educational video about milkyway Galaxy</h2>
+
+    <div class="video-container">
+
+        <!-- Embedded YouTube video -->
+        <iframe
+            width="80%"
+            height="350"
+            src="video.mp4"
+            title="Space Video"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+
+</section>
+
+<!-- footer -->
+<footer class="footer">
+
+    <!-- Footer text -->
+    <p> &copy; Big Planetarium. Accessible web prototype.</p>
+
+</footer>
+
+<!-- External JavaScript file -->
+<script src="script.js"></script>
+
+</body>
+</html>
