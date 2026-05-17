@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    
+    <meta charset="UTF-8">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title shown in browser tab -->
+    <title>Planets - Big Planetarium</title>
+
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<header class="navbar">
+
+    <!-- Website logo -->
+    <div class="logo">Big Planetarium</div>
+
+    <!-- Navigation menu -->
+    <nav>
+        <a href="index.html">Home</a>
+
+        <!-- Active page -->
+        <a href="planets.html" class="active">Planets</a>
+
+        <a href="mars.html">Mars</a>
+    </nav>
+</header>
+
+<!-- show section -->
+<section class="show">
+
+    <!-- show content -->
+    <div class="show-content">
+
+        
+        <p class="subtitle">SOLAR SYSTEM GUIDE</p>
+
+        <!-- Main heading -->
+        <h1>The eight<br>planets</h1>
+
+        <!-- Short intro paragraph -->
+        <p class="description">
+            Our Solar System sits inside the Milky Way. It has rocky inner planets,
+            giant outer planets, moons, rings, asteroids, and one star at the centre: the Sun.
+        </p>
+    </div>
+</section>
+
+<!-- Planets section-->
+<section class="planets-section">
+
+   
+    <div class="section-header">
+
+        <!-- Section heading -->
+        <div>
+            <p class="subtitle green">PLANET CARDS</p>
+            <h2>Quick facts</h2>
+        </div>
+
+        <!-- Planet filter dropdown -->
+        <div class="filter">
+
+            <!-- Dropdown label -->
+            <label>Filter planets</label>
+
+            <!-- Select menu -->
+            <select id="planetFilter">
+                <option value="all">Show all</option>
+                <option value="inner">Inner planets</option>
+                <option value="outer">Outer planets</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Planets -->
+    <div class="cards">
+
+        <!-- Mercury -->
+        <div class="card inner">
+            <div class="planet mercury"></div>
+
+            <h3>Mercury</h3>
+
+            <p>The closest planet to the Sun and the smallest planet in our Solar System.</p>
+        </div>
+
+        <!-- Venus -->
+        <div class="card inner">
+            <div class="planet venus"></div>
+
+            <h3>Venus</h3>
+
+            <p>A hot rocky planet with thick clouds and a surface hidden from view.</p>
+        </div>
+
+        <!-- Earth -->
+        <div class="card inner">
+            <div class="planet earth"></div>
+
+            <h3>Earth</h3>
+
+            <p>The only known planet with life, covered by oceans, land, and atmosphere.</p>
+        </div>
+
+        <!-- Mars -->
+        <div class="card inner highlight">
+            <div class="planet mars"></div>
+
+            <h3>Mars</h3>
+
+            <p>The red planet, known for dust storms, volcanoes, valleys, and polar ice caps.</p>
+
+            <!-- Link to Mars page -->
+            <a href="mars.html">Learn more about Mars</a>
+        </div>
+
+        <!-- Jupiter -->
+        <div class="card outer">
+            <div class="planet jupiter"></div>
+
+            <h3>Jupiter</h3>
+
+            <p>The largest planet, with huge storms and many moons.</p>
+        </div>
+
+        <!-- Saturn -->
+        <div class="card outer">
+            <div class="planet saturn"></div>
+
+            <h3>Saturn</h3>
+
+            <p>A gas giant famous for its wide, bright rings made of ice and rock.</p>
+        </div>
+
+        <!-- Uranus -->
+        <div class="card outer">
+            <div class="planet uranus"></div>
+
+            <h3>Uranus</h3>
+
+            <p>An ice giant that spins on its side compared with most other planets.</p>
+        </div>
+
+        <!-- Neptune-->
+        <div class="card outer">
+            <div class="planet neptune"></div>
+
+            <h3>Neptune</h3>
+
+            <p>A distant ice giant with powerful winds and a deep blue colour.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- footer-->
+<footer class="footer">
+
+    <!-- Copyright symbol and text -->
+    <p> &copy; Big Planetarium. Accessible web prototype.</p>
+
+    <!-- Link to next page -->
+    <a href="mars.html">Next: Mars</a>
+</footer>
+
+<!-- External JavaScript file -->
+<script src="script.js"></script>
+</body>
+</html>
